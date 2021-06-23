@@ -24,39 +24,6 @@ def liquor_type():
     liquor_data = json.loads(response.text)
 
     random_drink = liquor_data["drinks"][0]
-    #random_drink = random.choice[]
-
-
-    # for l in (liquor_data["drinks"]):
-    #     valid_options = [l["strDrink"]]
-    #     cocktail_choice = random.choice(valid_options)
-    #     print("Cocktail choice:", cocktail_choice)
-       #print(valid_options)
-
-liquor_type()
-
-
-
-
-# import webbrowser
-# def cocktails():
-#     cocktail_type = input("please select type of cocktail: ")
-#     request_url = f"https://www.thecocktaildb.com/api/json/v1/1/search.php?s={cocktail_type}"
-#     data = requests.get(request_url)
-#     tt = json.loads(data.text)
-    
-    
-#     for i in (tt["drinks"]):
-#         print(i["strDrink"], "\n")
-#         print(i["strInstructions"], "\n")
-        
-#         print(i["strIngredient1"])
-#         print(i["strIngredient2"])
-#         print(i["strIngredient3"])
-#         print(i["strIngredient4"])
-#         url = i["strDrinkThumb"]
-#         webbrowser.open(url)
-# cocktails()
 
 ## Send Email 
 import os
